@@ -464,7 +464,7 @@ footer {
 		float: left;
 		display: block;
 	}
-	footer .form-box input[type=text] {
+	footer .form-box input[type=email] {
 		width: 270px;
 		font-size: 15px;
 		line-height: 28px;
