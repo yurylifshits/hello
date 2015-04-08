@@ -464,7 +464,8 @@ footer {
 		float: left;
 		display: block;
 	}
-	footer .form-box input[type=email] {
+	/* footer .form-box input[type=email] */
+	input#mce-EMAIL {
 		width: 270px;
 		font-size: 15px;
 		line-height: 28px;
