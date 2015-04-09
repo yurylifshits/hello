@@ -17,7 +17,10 @@ body {
 	background: #ffffff;
 	color: #26282C;
 	min-width: 970px;
+    -webkit-text-size-adjust: none;
 }
+
+
 
 .container {
 	position: relative;
@@ -236,8 +239,7 @@ section.intro {
 
 section.team .section-title {
 	font-size: 20px;
-	line-height: 30px;
-	padding: 26px 0px;
+	line-height: 84px;
 	color: #231944;
 }
 	section.team .section-title span {
