@@ -236,7 +236,8 @@ section.intro {
 
 section.team .section-title {
 	font-size: 20px;
-	line-height: 84px;
+	line-height: 30px;
+	padding: 26px 0px;
 	color: #231944;
 }
 	section.team .section-title span {
