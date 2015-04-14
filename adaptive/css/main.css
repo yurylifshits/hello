@@ -20,8 +20,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-
-
 .container {
 	position: relative;
 	width: 940px;
@@ -32,6 +30,8 @@ section {
 	z-index: 2;
 	min-width: 970px;
 }
+
+.visible-xs { display: none; }
 
 header {
 	position: relative;
@@ -521,3 +521,110 @@ footer {
 			background: url(../img/city-icon.png) no-repeat;
 			background-image: -webkit-image-set(url(../img/city-icon.png) 1x, url(../img/city-icon@2x.png) 2x);					
 		}
+
+@media screen and (max-width: 767px) {
+	.visible-xs { display: block!important; }
+	.hidden-xs { display: none!important; }
+
+	body, section {
+		width: 100%;
+		min-width: 0;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	section.intro .corp-name {
+		font-size: 20px;
+		line-height: 41px;
+		color: #231944;
+		padding: 170px 0 0 25px;
+	}
+		section.intro .corp-name span {
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+
+	section.intro .section-title {
+		font-size: 38px;
+		line-height: 50px;
+		padding: 10px 0 20px 25px;
+	}
+
+	section.intro .get-in { margin: 0 auto; }
+
+	section.intro .hr { margin: 40px 0 35px; }
+
+	section.intro .list-box .left { width: 100%; }
+	section.intro .list-box .col-1 {
+		text-align: center;
+		padding: 0 0 20px;
+	}
+
+	section.intro .circle.c1 {
+		width: 150px; height: 150px;
+		border-radius: 155px;
+		opacity: 0.32;
+		top: 210px; left: 50%;
+		margin: 0 0 0 -75px;
+	}
+	section.intro .circle.i1 {
+		top: 70px;
+		margin: 0 0 0 227px;
+	}
+	section.intro .circle.i2 {
+		top: -2px;
+		margin: 0 0 0 -250px;
+	}
+	section.intro .circle.i3 {
+		top: -55px;
+		margin: 0 0 0 -10px;
+	}
+		section.intro .circle.i3:after { left: 37px; }
+
+	section.intro .sub-title { padding: 0 0 0 25px; }
+	section.intro ul { padding: 0 0 14px 50px; }
+	section.intro ul.alt { padding: 0 0 0 50px; }
+
+	section.team .section-title { padding: 0 0 0 25px; }
+	section.team .men { width: 50%; }
+	section.team .men:last-of-type { margin-left: 25%; }
+
+	section.lead ul li { width: 100%; }
+
+	section.companies .founding-box {
+		font-size: 0;
+		text-align: center;
+	}
+		section.companies .founding-box a {
+			display: inline-block;
+			vertical-align: top;
+			float: none;
+			margin: 0 20px 15px!important;
+		}
+
+	section.companies .press-box {
+		font-size: 0;
+		text-align: center;
+	}
+		section.companies .press-box a {
+			display: inline-block;
+			vertical-align: top;
+			float: none;
+			margin: 0 20px 15px!important;
+		}
+
+	section.lead .lead-box { padding: 0 15px 20px; }
+	section.lead ul li { padding: 0; }
+
+	footer .container .left.f,
+	footer .container .right.f {
+		float: none;
+		margin: 0 auto;
+		width: 320px;
+	}
+
+	input#mce-EMAIL { width: 200px; }
+}
