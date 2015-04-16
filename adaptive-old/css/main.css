@@ -18,7 +18,6 @@ body {
 	color: #26282C;
 	min-width: 970px;
 	-webkit-text-size-adjust: 100%;
-	padding: 41px 0 0;
 }
 
 .container {
@@ -39,8 +38,6 @@ header {
 	z-index: 3;
 	height: 41px;
 	background: #D8DCE4;
-	position: fixed;
-	top: 0; right: 0; left: 0;
 }
 	header .title {
 		font-size: 20px;
@@ -353,8 +350,8 @@ section.companies { padding: 0 0 55px; }
 	}
 
 	section.companies .founding-box a.l8 {
-		width: 80px;
-		margin: 10px 29px 0 0;
+		width: 95px;
+		margin: 10px 28px 0 0;
 		background-position: 0 -44px;
 	}
 	section.companies .founding-box a.l9 {
@@ -378,9 +375,9 @@ section.companies { padding: 0 0 55px; }
 		background-position: -415px -44px;
 	}
 	section.companies .founding-box a.l13 {
-		width: 103px;
-		margin: 10px 21px 0 0;
-		background-position: -638px 0;
+		width: 76px;
+		margin: 10px 34px 0 0;
+		background-position: -535px -44px;
 	}
 	section.companies .founding-box a.l14 {
 		width: 142px;
@@ -532,7 +529,6 @@ footer {
 	body, section {
 		width: 100%;
 		min-width: 0;
-		padding: 0;
 	}
 
 	.container {
@@ -544,7 +540,7 @@ footer {
 		font-size: 20px;
 		line-height: 41px;
 		color: #231944;
-		padding: 25px 0 0 25px;
+		padding: 170px 0 0 25px;
 	}
 		section.intro .corp-name span {
 			text-transform: uppercase;
@@ -567,9 +563,30 @@ footer {
 		padding: 0 0 20px;
 	}
 
-	section.intro .sub-title { padding: 0 0 0 30px; }
-	section.intro ul { padding: 0 0 40px 30px; }
-	section.intro ul.alt { padding: 0 0 0 30px; }
+	section.intro .circle.c1 {
+		width: 150px; height: 150px;
+		border-radius: 155px;
+		opacity: 0.32;
+		top: 210px; left: 50%;
+		margin: 0 0 0 -75px;
+	}
+	section.intro .circle.i1 {
+		top: 70px;
+		margin: 0 0 0 227px;
+	}
+	section.intro .circle.i2 {
+		top: -2px;
+		margin: 0 0 0 -250px;
+	}
+	section.intro .circle.i3 {
+		top: -55px;
+		margin: 0 0 0 -10px;
+	}
+		section.intro .circle.i3:after { left: 37px; }
+
+	section.intro .sub-title { padding: 0 0 0 25px; }
+	section.intro ul { padding: 0 0 14px 50px; }
+	section.intro ul.alt { padding: 0 0 0 50px; }
 
 	section.team .section-title { padding: 0 0 0 25px; }
 	section.team .men { width: 50%; }
@@ -605,21 +622,9 @@ footer {
 	footer .container .left.f,
 	footer .container .right.f {
 		float: none;
-		padding: 15px 20px;
-		width: 100%;
+		margin: 0 auto;
+		width: 320px;
 	}
 
-	input#mce-EMAIL {
-		width: 100%;
-		float: none;
-	}
-
-	footer .fields .item { float: none; }
-
-	footer .form-box input[type=submit] {
-		margin: 10px auto 5px;
-		float: none;
-	}
-
-	footer .form-box .add { text-align: center; }
+	input#mce-EMAIL { width: 200px; }
 }
