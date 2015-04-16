@@ -106,7 +106,7 @@ section.intro {
 		}
 	section.intro .hr {
 		margin: 125px 0 36px;
-		height: 1px;
+		height: 0px;
 		background: #d6d6d7;
 	}
 	section.intro .col-1 {
