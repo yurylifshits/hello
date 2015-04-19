@@ -91,13 +91,13 @@ section.intro {
 		display: block;
 		width: 154px;
 		font-size: 18px;
-		line-height: 40px;
+		line-height: 38px;
 		font-weight: 500;
 		text-align: center;
 		text-decoration: none;
-		color: #ffffff;
-		background: #F77B55;
-		border-radius: 2px;
+		color: #f77b71;
+		background: #ffffff;
+		border: 1px solid #E1DEDE;
 	}
 		section.intro .get-in:hover {
 			color: #ffffff;
@@ -250,7 +250,7 @@ section.team .section-title {
 		font-weight: 300;
 	}
 section.team .men {
-	width: 16.666666%;
+	width: 20%;
 	text-align: center;
 	margin: 0 0 35px;
 	line-height: 24px;
@@ -471,8 +471,7 @@ footer {
 		display: block;
 	}
 	/* footer .form-box input[type=email] */
-	
-	footer .form-box input#mce-EMAIL {
+	input#mce-EMAIL {
 		width: 270px;
 		font-size: 15px;
 		line-height: 28px;
@@ -526,7 +525,7 @@ footer {
 			background-image: -webkit-image-set(url(../img/city-icon.png) 1x, url(../img/city-icon@2x.png) 2x);					
 		}
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 767px) {
 	.visible-xs { display: block!important; }
 	.hidden-xs { display: none!important; }
 
@@ -574,6 +573,7 @@ footer {
 
 	section.team .section-title { padding: 0 0 0 25px; }
 	section.team .men { width: 50%; }
+	section.team .men:last-of-type { margin-left: 25%; }
 
 	section.lead ul li { width: 100%; }
 
@@ -609,32 +609,17 @@ footer {
 		width: 100%;
 	}
 
-	footer .container .left.f { padding-bottom: 0; }
-	footer .container .right.f { padding-top: 0; }
-
-	footer .form-box input#mce-EMAIL {
+	input#mce-EMAIL {
 		width: 100%;
 		float: none;
-		font-size: 22px;
-		line-height: 48px;
-		height: 50px;
 	}
 
-	footer .fields .item { margin: 0 15px 0 0; }
-		footer .fields a { margin: 0 15px 0 0; }
+	footer .fields .item { float: none; }
 
-	footer .form-box {
-		position: relative;
-		padding-right: 160px;
-	}
 	footer .form-box input[type=submit] {
+		margin: 10px auto 5px;
 		float: none;
-		width: 150px;
-		font-size: 22px;
-		line-height: 50px;
-		position: absolute;
-		top: 0; right: 0;
-		border: none;
 	}
-	footer .form-box .add { margin-right: -160px; }
+
+	footer .form-box .add { text-align: center; }
 }
