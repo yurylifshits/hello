@@ -18,8 +18,9 @@ body {
 	color: #26282C;
 	min-width: 970px;
 	-webkit-text-size-adjust: 100%;
-	padding: 41px 0 0;
 }
+
+
 
 .container {
 	position: relative;
@@ -32,15 +33,11 @@ section {
 	min-width: 970px;
 }
 
-.visible-xs { display: none; }
-
 header {
 	position: relative;
 	z-index: 3;
 	height: 41px;
 	background: #D8DCE4;
-	position: fixed;
-	top: 0; right: 0; left: 0;
 }
 	header .title {
 		font-size: 20px;
@@ -91,13 +88,13 @@ section.intro {
 		display: block;
 		width: 154px;
 		font-size: 18px;
-		line-height: 40px;
+		line-height: 38px;
 		font-weight: 500;
 		text-align: center;
 		text-decoration: none;
-		color: #ffffff;
-		background: #F77B55;
-		border-radius: 2px;
+		color: #f77b71;
+		background: #ffffff;
+		border: 1px solid #E1DEDE;
 	}
 		section.intro .get-in:hover {
 			color: #ffffff;
@@ -250,7 +247,7 @@ section.team .section-title {
 		font-weight: 300;
 	}
 section.team .men {
-	width: 16.666666%;
+	width: 20%;
 	text-align: center;
 	margin: 0 0 35px;
 	line-height: 24px;
@@ -353,8 +350,8 @@ section.companies { padding: 0 0 55px; }
 	}
 
 	section.companies .founding-box a.l8 {
-		width: 80px;
-		margin: 10px 29px 0 0;
+		width: 95px;
+		margin: 10px 28px 0 0;
 		background-position: 0 -44px;
 	}
 	section.companies .founding-box a.l9 {
@@ -378,9 +375,9 @@ section.companies { padding: 0 0 55px; }
 		background-position: -415px -44px;
 	}
 	section.companies .founding-box a.l13 {
-		width: 103px;
-		margin: 10px 21px 0 0;
-		background-position: -638px 0;
+		width: 76px;
+		margin: 10px 34px 0 0;
+		background-position: -535px -44px;
 	}
 	section.companies .founding-box a.l14 {
 		width: 142px;
@@ -471,8 +468,7 @@ footer {
 		display: block;
 	}
 	/* footer .form-box input[type=email] */
-	
-	footer .form-box input#mce-EMAIL {
+	input#mce-EMAIL {
 		width: 270px;
 		font-size: 15px;
 		line-height: 28px;
@@ -525,116 +521,3 @@ footer {
 			background: url(../img/city-icon.png) no-repeat;
 			background-image: -webkit-image-set(url(../img/city-icon.png) 1x, url(../img/city-icon@2x.png) 2x);					
 		}
-
-@media screen and (max-width: 560px) {
-	.visible-xs { display: block!important; }
-	.hidden-xs { display: none!important; }
-
-	body, section {
-		width: 100%;
-		min-width: 0;
-		padding: 0;
-	}
-
-	.container {
-		width: 100%;
-		padding: 0 15px;
-	}
-
-	section.intro .corp-name {
-		font-size: 20px;
-		line-height: 41px;
-		color: #231944;
-		padding: 25px 0 0 25px;
-	}
-		section.intro .corp-name span {
-			text-transform: uppercase;
-			font-weight: 300;
-		}
-
-	section.intro .section-title {
-		font-size: 38px;
-		line-height: 50px;
-		padding: 10px 0 20px 25px;
-	}
-
-	section.intro .get-in { margin: 0 auto; }
-
-	section.intro .hr { margin: 40px 0 35px; }
-
-	section.intro .list-box .left { width: 100%; }
-	section.intro .list-box .col-1 {
-		text-align: center;
-		padding: 0 0 20px;
-	}
-
-	section.intro .sub-title { padding: 0 0 0 30px; }
-	section.intro ul { padding: 0 0 40px 30px; }
-	section.intro ul.alt { padding: 0 0 0 30px; }
-
-	section.team .section-title { padding: 0 0 0 25px; }
-	section.team .men { width: 50%; }
-
-	section.lead ul li { width: 100%; }
-
-	section.companies .founding-box {
-		font-size: 0;
-		text-align: center;
-	}
-		section.companies .founding-box a {
-			display: inline-block;
-			vertical-align: top;
-			float: none;
-			margin: 0 20px 15px!important;
-		}
-
-	section.companies .press-box {
-		font-size: 0;
-		text-align: center;
-	}
-		section.companies .press-box a {
-			display: inline-block;
-			vertical-align: top;
-			float: none;
-			margin: 0 20px 15px!important;
-		}
-
-	section.lead .lead-box { padding: 0 15px 20px; }
-	section.lead ul li { padding: 0; }
-
-	footer .container .left.f,
-	footer .container .right.f {
-		float: none;
-		padding: 15px 20px;
-		width: 100%;
-	}
-
-	footer .container .left.f { padding-bottom: 0; }
-	footer .container .right.f { padding-top: 0; }
-
-	footer .form-box input#mce-EMAIL {
-		width: 100%;
-		float: none;
-		font-size: 22px;
-		line-height: 48px;
-		height: 50px;
-	}
-
-	footer .fields .item { margin: 0 15px 0 0; }
-		footer .fields a { margin: 0 15px 0 0; }
-
-	footer .form-box {
-		position: relative;
-		padding-right: 160px;
-	}
-	footer .form-box input[type=submit] {
-		float: none;
-		width: 150px;
-		font-size: 22px;
-		line-height: 50px;
-		position: absolute;
-		top: 0; right: 0;
-		border: none;
-	}
-	footer .form-box .add { margin-right: -160px; }
-}
