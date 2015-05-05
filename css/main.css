@@ -70,7 +70,7 @@ header {
 				header .links ul li a:hover,
 				header .links ul li a:focus {
 					text-decoration: none;
-					border-bottom: 1px solid #404E5C;
+					border-bottom: 0px solid #404E5C;
 					color: #404E5C;
 				}
 
