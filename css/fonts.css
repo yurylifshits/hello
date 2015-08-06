@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'FuturaDemiC';
+	src: url("../fonts/FuturaDemiC.otf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'FuturaLightC';
+	src: url("../fonts/FuturaLightC.otf");
+	font-weight: 400;
+}
