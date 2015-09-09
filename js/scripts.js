@@ -131,4 +131,12 @@ $(document).ready(function () {
 		var onCareersLoaded = setInterval(onCareersLoaded_func, 1);
 	}
 
+	$('header .title a').hover(function () {
+		var _e1 = $('header .title a img.e1'),
+			_e2 = $('header .title a img.e2');
+
+		_e1.toggleClass('animate');
+		_e2.toggleClass('animate');
+	});
+
 });
