@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="google-site-verification" content="589MSdtl2F2dwFixxHwguJ3Gn6K5JF3S-6HgZCrZu_4" />
-		<meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
         <link rel="icon" href="img/favicon32.ico">
 
         <meta property="og:title" content="Entangled Solutions — Innovation Services for Higher Education"/>
@@ -18,28 +18,30 @@
 		<link href="css/main.css" rel="stylesheet" />
 		<link href="css/responsive.css" rel="stylesheet" />
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/jquery.scrollbar.js"></script>
+		<script src="js/SocialShare.js"></script>
+		<script src="js/fancybox/jquery.fancybox.js"></script>
+		<script src="js/slick.js"></script>
 		<script src="js/scripts.js"></script>
-
 	</head>
 	<body>
-		<!-- -->
-		<header class="main">
-			<div class="container clearfix hidden-xs">
-				<div class="title left"><a href="/"><img src="img/logo-e.svg" class="e1" alt="" /><span><img src="img/logo-e.svg" class="e2" alt="" /></span><img src="img/logo-ntngld.svg" class="ntngld" alt="" /></a></div>
 
-				<div class="contacts right clearfix">
-					<div class="call"><a href="tel:+14157952767">+1 415 795 2767</a><i></i></div>
-					<a href="mailto:yury@entangled.solutions" class="mail"><i></i></a>
+		<header>
+			<div class="container clearfix hidden-xs">
+				<div class="title left">
+					<a href="/"><img src="img/logotype.svg" alt="" /></a>
 				</div>
 
 				<div class="links right">
 					<nav>
 						<ul>
 							<li class="active"><a href="/">Services</a></li>
+							<!-- <li><a href="guides">Innovation Guides</a></li> -->
 							<li><a href="about">About us</a></li>
 							<li><a href="projects">Projects</a></li>
 							<li><a href="careers">Careers</a></li>
+							<li><a href="contacts">Contacts</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -48,16 +50,20 @@
 			<div class="visible-xs wrapper">
 				<a href="#" class="openMenu"><span></span></a>
 
-				<div class="title"><a href="/"><img src="img/logo-e.svg" class="e1" alt="" /><span><img src="img/logo-e.svg" class="e2" alt="" /></span><img src="img/logo-ntngld.svg" class="ntngld" alt="" /></a></div>
+				<div class="title">
+					<a href="/"><img src="img/logotype.svg" alt="" /></a>
+				</div>
 
-				<a href="tel:+14157952767" class="call"></a>
+				<a href="tel:+14157952767" class="call"><i class="icon-08"></i></a>
 
 				<div class="menu">
 					<ul>
 						<li class="active"><a href="/">Services</a></li>
+						<!-- <li><a href="guides">Innovation Guides</a></li> -->
 						<li><a href="about">About us</a></li>
 						<li><a href="projects">Projects</a></li>
 						<li><a href="careers">Careers</a></li>
+						<li><a href="contacts">Contacts</a></li>
 					</ul>
 				</div>
 			</div>
@@ -96,7 +102,7 @@
 					<div class="item">
 						<i class="icon i3"></i>
 						<span>Research</span>
-						Best practices and trend analysis
+						Market trends and competitive landscape
 					</div>
 					
 					<div class="item">
@@ -141,7 +147,7 @@
 						<ul>
 							<li><strong>New degrees.</strong> The majority of college students will be "non-traditional" and require new models of education.</li>
 							<li><strong>International.</strong> The number of international students studying in the US will increase by 3x over the next decade.</li>
-							<li><strong>Be the best.</strong> For institutions, it is a better to be the best at something narrow than it is to be mediocre at everything.</li>
+							<li><strong>Be the best.</strong> For institutions, it is better to be the best at something narrow than it is to be mediocre at everything.</li>
 							<li><strong>Try before you buy.</strong> Students will increasingly look to try free classes before making an enrollment decision.</li>
 							<li><strong>New funding models.</strong> Programs with better career outcomes will be able to offer better loan support and financial aid.</li>
 							<li><strong>Employers.</strong> Employer partnerships are key for graduates’ success in the job market.</li>
@@ -192,7 +198,7 @@
 						<div class="name">Research</div>
 						<div class="desc">Stakeholder interviews
 						<br/>Market research
-						<br/>Best practices analysis</div>
+						<br/>Data analysis</div>
 						<div class="step">Research summary</div>
 					</div>
 
@@ -290,44 +296,59 @@
 			</div>
 		</section>
 
-		<footer id="contacts">
-			<div class="container clearfix">
-				<div class="left f">
-					<div class="section-title">Get in touch</div>
+			<div class="guide-subscribe">
+				<div class="container">
+					<div class="guide-subscribe__title">Innovation Insights from&nbsp;Entangled&nbsp;Solutions</div>
+					<div class="guide-subscribe__desc">A newsletter for education innovators</div>
 
-					<div class="name"><span>Yury Lifshits</span>, Managing Director</div>
-
-					<div class="fields clearfix">
-						<a href="https://twitter.com/yurylifshits" target="_blank" class="tw left"><i></i>yurylifshits</a>
-						<a href="tel:+14157952767" target="_blank" class="ph left"><i></i>+1 415 795 2767</a>
-						<div class="left visible-xs" style="width: 100%; height: 14px;"></div>
-						<a href="mailto:yury@entangled.solutions" target="_blank" class="em left"><i></i>yury@entangled.solutions</a>
-					</div>
-				</div>
-				<div class="right f">
-					<div class="section-title">Newsletter</div>
-
-					<form class="form-box" action="//blendedlabs.us2.list-manage.com/subscribe/post?u=975f6a7c2fcd50fef77923340&amp;id=fea233fac8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-						<div class="clearfix">
-							<input type="email" name="EMAIL" id="mce-EMAIL" />
-							<input type="submit" value="Subscribe" class="btn red small" />
-						</div>
-
-						<div class="add">Innovation insights from Entangled Solutions</div>
+					<form class="guide-subscribe__form" action="//blendedlabs.us2.list-manage.com/subscribe/post?u=975f6a7c2fcd50fef77923340&amp;id=fea233fac8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+						<input placeholder="Your email" type="email" name="EMAIL" id="mce-EMAIL">
+						<button type="submit" value="Subscribe">Subscribe</button> 
 					</form>
 				</div>
 			</div>
 
-			<div class="copy-box hidden-xs">
-				<div class="container clearfix">
-					<div class="left">&copy; <a href="http://entangled.solutions">Entangled Solutions</a>, LLC is an <a href="http://entangled.ventures" target="_blank">Entangled Ventures</a> company</div>
+		<footer id="contacts">
+			<div class="container">
+				<div class="clearfix">
+					<div class="title left">
+						<a href="/" class="logotype"><img src="img/logotype.svg" alt="" /></a>
+						<div class="description"><a href="http://entangled.ventures/">A member of the Entangled Ventures family</a></div>
+					</div>
 
-					<div class="right">44 Tehama Street, San Francisco, CA 94105</div>
+					<div class="follow right">
+						<div class="f-title">Follow us</div>
+						<a href="https://www.facebook.com/entangledsolutions"><i class="social icon-05"></i></a>
+						<a href="https://twitter.com/EntangledSOL"><i class="social icon-03"></i></a>
+						<a href="https://www.linkedin.com/company/entangled-solutions"><i class="social icon-04"></i></a>
+					</div>
+
+					<div class="touch right">
+						<div class="f-title">Get in touch</div>
+						<a href="tel:+14157952767"><i class="contact icon-08"></i>+1 415 795 2767</a>
+						<a href="mailto:hi@entangled.solutions"><i class="contact icon-09"></i>hi@entangled.solutions</a>
+					</div>
+				</div>
+
+				<div class="f-hr"></div>
+
+				<div class="clearfix">
+					<div class="copyrights left">&copy; 2015 Entangled Solutions, LLC</div>
+					<div class="nav right hidden-xs">
+						<ul class="clearfix">
+							<li><a href="/">Services</a></li>
+							<!-- <li><a href="guides">Innovation Guides</a></li> -->
+							<li><a href="about">About us</a></li>
+							<li><a href="projects">Projects</a></li>
+							<li><a href="careers">Careers</a></li>
+							<li><a href="contacts">Contacts</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</footer>
 
-		<script>
+<!--		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -335,6 +356,6 @@
 
   ga('create', 'UA-61695546-1', 'auto');
   ga('send', 'pageview');
-        </script>
+        </script>-->
 	</body>
 </html>

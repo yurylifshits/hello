@@ -1,11 +1,69 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3125556, 2015-11-14T03:00:53-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Steagal-Li by insigne
+ * URL: http://www.myfonts.com/fonts/insigne/steagal/light/
+ * Copyright: Copyright 2015 Adobe Systems Incorporated. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3125556
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+/*@import url("http://hello.myfonts.net/count/2fb134");*/
+@import "../fonts/icomoon/style.css";
+  
+@font-face {
+	font-family: 'Steagal';
+	src: url('../fonts/2FB134_0_0.eot');
+	src: url('../fonts/2FB134_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/2FB134_0_0.woff2') format('woff2'),
+		 url('../fonts/2FB134_0_0.woff') format('woff'),
+		 url('../fonts/2FB134_0_0.ttf') format('truetype');
+
+	font-weight: 300;
+	font-style: normal;
+}
+
 @font-face {
 	font-family: 'FuturaDemiC';
 	src: url("../fonts/FuturaDemiC.otf");
-	font-weight: 400;
+	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'FuturaLightC';
 	src: url("../fonts/FuturaLightC.otf");
-	font-weight: 400;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		 url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+		 url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		 url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+		 url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
