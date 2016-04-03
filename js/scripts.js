@@ -49,7 +49,7 @@ $(document).ready(function () {
 				var _items = $('<div />', { class: "items" });
 
 				$('.whr-items .whr-item').each(function () {
-					var _item  = $('<div />', { class: "item hidden" }),
+					var _item  = $('<div />', { class: "item" }),
 						_cont  = $('<div />', { class: "container" }),
 						_clear = $('<div />', { class: "clearfix" }),
 						_left  = $('<div />', { class: "left" }),
