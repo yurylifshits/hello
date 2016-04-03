@@ -70,14 +70,14 @@ $(document).ready(function () {
 
 					_right.find('.whr-description').prepend('<div class="label">Role</div>');
 
-					_right.find('p').each(function () {
+					/* _right.find('p').each(function () {
 						var LIarray = $(this).html().split('<br>'),
 							UL = '<ul>';
 
 						$.each(LIarray, function () { UL += (this != '') ? ('<li>' + this + '</li>') : ''; });
 						UL += '</ul>';
 
-						$(this).replaceWith(UL);
+						$(this).replaceWith(UL);  */
 					});
 
 					_right.append('<a href="#" class="showFull">Full description</a>');
