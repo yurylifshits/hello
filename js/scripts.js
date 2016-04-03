@@ -77,8 +77,8 @@ $(document).ready(function () {
 						$.each(LIarray, function () { UL += (this != '') ? ('<li>' + this + '</li>') : ''; });
 						UL += '</ul>';
 
-						$(this).replaceWith(UL);  */
-					});
+						$(this).replaceWith(UL);  
+					});  */
 
 					_right.append('<a href="#" class="showFull">Full description</a>');
 					_right.append('<a href="' + _left.find('a').attr('href') + '" target="_blank" class="applyJob btn middle red">Apply for this job</a>');
