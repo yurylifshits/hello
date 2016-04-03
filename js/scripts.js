@@ -58,7 +58,7 @@ $(document).ready(function () {
 					_left.html($(this).find('.whr-title')[0].outerHTML);
 					_right.html($(this).find('.whr-description')[0].outerHTML);
 
-					_right.find('p:nth-child(1)').remove();       /*  , p:nth-child(2) */
+					_right.find('p:nth-child(1), p:nth-child(2)').remove();       /*   */
 
 					_right.find('p').each(function () {
 						if ($(this).html() == '<strong>Requirements</strong>')
