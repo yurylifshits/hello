@@ -589,7 +589,7 @@
     left: auto;
   }
   .jour-work .jour-work__s2-item-event .left {
-    float: none;
+    float: none!important;
     position: absolute;
     top: 0;
     right: auto;
@@ -599,7 +599,7 @@
     height: auto;
   }
   .jour-work .jour-work__s2-item-event .right {
-    float: none;
+    float: none!important;
     width: auto;
     height: auto;
   }
@@ -640,15 +640,15 @@
     text-align: center;
   }
   .jour-work .jour-work__s5-date {
-    float: none;
+    float: none!important;
     margin: 0 0 10px;
   }
   .jour-work .jour-work__s5-fee {
-    float: none;
+    float: none!important;
     margin: 0 0 20px;
   }
   .jour-work .jour-work__s5 .jour-work__btn {
-    float: none;
+    float: none!important;
   }
   .jour-work .jour-work__s6 {
     padding: 48px 20px 40px;
