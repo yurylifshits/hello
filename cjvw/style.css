@@ -280,6 +280,10 @@
 .jour-work .jour-work__s2-item.active .jour-work__s2-item-hide {
   display: block;
 }
+.jour-work .jour-work__s2-additional {
+  margin: 20px 0 -10px;
+  opacity: 0.5;
+}
 .jour-work .jour-work__s3 {
   padding: 38px 84px 48px 21px;
 }
