@@ -1,5 +1,8 @@
+.page-heading {
+  display: none;
+}
 .jour-work {
-  margin: 0 -20px -30px;
+  margin: -20px -20px -30px;
   color: #000000;
   background: #ffffff;
   width: 810px;
@@ -485,7 +488,7 @@
 .jour-work .jour-work__s7-form input:focus {
   outline: none;
 }
-@media (min-width: 640px) and (max-width: 809px) {
+@media (max-width: 639px) {
   .jour-work {
     margin-bottom: 0;
     width: auto;
@@ -598,5 +601,123 @@
     display: block;
     width: 136px;
     height: 45px;
+  }
+}
+@media (min-width: 640px) and (max-width: 809px) {
+  .jour-work {
+    margin-bottom: -10px;
+    width: auto;
+    height: auto;
+  }
+  .jour-work .jour-work__poster {
+    padding: 51px 0 0;
+  }
+  .jour-work .jour-work__poster-title {
+    font: 700 36px/48px 'Merriweather', Arial, sans-serif;
+  }
+  .jour-work .jour-work__poster-text {
+    margin: 0 0 23px;
+  }
+  .jour-work .jour-work__s1 {
+    padding: 41px 20px 56px;
+  }
+  .jour-work .jour-work__s1-half .left {
+    width: 47%;
+    height: auto;
+  }
+  .jour-work .jour-work__s1-half .right {
+    width: 47%;
+    height: auto;
+  }
+  .jour-work .jour-work__s1-gallery {
+    margin: 0 -8px;
+  }
+  .jour-work .jour-work__s1-item {
+    margin: 0;
+    padding: 0 8px;
+    width: 33.333333%;
+    height: auto;
+  }
+  .jour-work .jour-work__s2 {
+    padding: 43px 20px 54px;
+  }
+  .jour-work .jour-work__s2-item {
+    padding: 51px 44px 0 90px;
+  }
+  .jour-work .jour-work__s2-item-number {
+    width: 90px;
+    height: auto;
+  }
+  .jour-work .jour-work__s2-item-event .right {
+    float: left;
+    width: 350px;
+    height: auto;
+  }
+  .jour-work .jour-work__s3 {
+    padding: 38px 20px 48px;
+  }
+  .jour-work .jour-work__s3-photo {
+    margin: 2px 0 0 15px;
+  }
+  .jour-work .jour-work__s3-info {
+    float: left;
+    margin: 0 0 0 33px;
+    width: 431px;
+    height: auto;
+  }
+  .jour-work .jour-work__s4 {
+    padding: 43px 20px 37px;
+  }
+  .jour-work .jour-work__s4-half .left {
+    width: 47%;
+    height: auto;
+  }
+  .jour-work .jour-work__s4-half .right {
+    width: 47%;
+    height: auto;
+  }
+  .jour-work .jour-work__s5 {
+    padding: 22px 20px 23px;
+  }
+  .jour-work .jour-work__s5-date {
+    margin: 9px 28px 0 0;
+  }
+  .jour-work .jour-work__s5-fee {
+    margin: 9px 0 0;
+  }
+  .jour-work .jour-work__s6 {
+    padding: 48px 20px 54px;
+  }
+  .jour-work .jour-work__s6-half .left {
+    width: 50%;
+    height: auto;
+  }
+  .jour-work .jour-work__s6-half .right {
+    width: 40%;
+    height: auto;
+  }
+  .jour-work .jour-work__s7 {
+    padding: 52px 20px 51px;
+  }
+  .jour-work .jour-work__s7-form {
+    margin: 0 -20px 0 0;
+  }
+  .jour-work .jour-work__s7-form input {
+    margin: 0 20px 0 0;
+    width: calc(33.333333% - 20px);
+    height: 45px;
+  }
+  .jour-work .jour-work__s7-form input:nth-child(2) {
+    width: calc(33.333333% - 20px);
+    height: 45px;
+  }
+  .jour-work .jour-work__s7-form button {
+    margin: 20px 20px 0 auto;
+    display: block;
+    width: 136px;
+    height: 45px;
+  }
+  #page-bottom-bar {
+    display: none;
   }
 }
