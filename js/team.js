@@ -1,7 +1,7 @@
 var teamMembers = [
 	{
 		name: 'Yury Lifshits',
-		photo: 'img/team/02.png',
+		photo: 'img/team/yury.jpg',
 		post: 'CEO',
 		linkedin: 'https://www.linkedin.com/in/lifshits',
 		bio: '<p><strong>Yury Lifshits</strong> is the CEO at Entangled Solutions. Throughout his career he has been an instructor at K-12, undergraduate, graduate, and continuous education programs, education technology developer, entrepreneur, and consultant.</p><p>Prior to starting Entangled Solutions, Yury led two education technology startups, a large-scale hybrid bootcamp program in Eastern Europe and one of the first mobile course creation platforms. Prior, Yury was a data scientist at Caltech and Yahoo! Labs and won two gold medals at the International Math Olympiad.</p>'
@@ -15,14 +15,14 @@ var teamMembers = [
 	},
 	{
 		name: 'Michael Horn',
-		photo: 'img/team/07.png',
+		photo: 'img/team/michael.jpg',
 		post: 'Principal Consultant',
 		linkedin: 'https://www.linkedin.com/in/michaelbhorn',
 		bio: '<p><strong>Michael Horn</strong> is a Principal Consultant at Entangled Solutions. He is also the co-founder of and a distinguished fellow at the Clayton Christensen Institute for Disruptive Innovation, a nonprofit think tank. Michael is the author of award-winning book "Disrupting Class: How Disruptive Innovation Will Change the Way the World Learns" and the Amazon bestseller "Blended: Using Disruptive Innovation to Improve Schools".</p><p>Michael serves on the board of Fidelis Education, Education Elements, Global Personalized Academics, the Silicon Schools Fund, the National Association of Independent Schools, and the Minerva Institute. He serves as an advisor to Intellus Learning, Pedago, Knod, Everest Education, AltSchool, Degreed, the Education Innovation Advisory Board at Arizona State University, and the Hechinger Institute on Education and the Media, and he is an executive editor at Education Next. Tech&Learning magazine named him to its list of the 100 most important people in the creation and advancement of the use of technology in education. He holds a BA in history from Yale University and an MBA from the Harvard Business School.</p>'
 	},
 	{
 		name: 'Paul Freedman',
-		photo: 'img/team/01.png',
+		photo: 'img/team/paul.jpg',
 		post: 'Principal Consultant',
 		linkedin: 'https://www.linkedin.com/in/paulmfreedman',
 		bio: '<p><strong>Paul</strong> is the CEO and co-founder of Entangled Ventures and a Principal Consultant at Entangled Solutions. A longtime advocate for the transformative power of a college education, he has founded, managed, and invested in a number of successful education ventures. Prior to Entangled Ventures, Paul was the Founder & CEO of Altius Education, an innovator in Higher Education focused on creating effective, personalized pathways to postsecondary degrees.</p><p>While still finishing college at the University of Chicago, Paul created Academic Engine, a college recruitment technology company that he later sold to Hobsons Inc. in 2004. After selling the company, Paul joined Hobsons as the president of its subsidiary focused on online student recruitment technologies where he served for five years prior to founding Altius.</p>'
