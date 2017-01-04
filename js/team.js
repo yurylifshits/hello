@@ -64,7 +64,7 @@ var teamMembers = [
 	},
 	{
 		name: 'Lauren Dibble',
-		photo: 'img/team/lauren.png',
+		photo: 'img/team/lauren.jpg',
 		post: 'Consulting Team Leader',
 		linkedin: 'https://www.linkedin.com/in/laurendibble',
 		bio: '<p><strong>Lauren Dibble</strong> is a Consulting Team Leader at Entangled Solutions, currently focused on Matterfund, an education funding platform in development on behalf of the World Economic Forum.</p><p>Prior to joining Entangled Solutions, Lauren was the founding Program Manager of Northeastern University\'s Venture Mentoring Network and led marketing, communications, and strategic initiatives for the Northeastern University Center for Entrepreneurship Education. Lauren worked closely with student- and alumni-founded startups and organized university-wide programs and events.</p><p>Previously, Lauren was a member of the Media Relations team at Northeastern University, after working with B2B technology clients at Weber Shandwick, a leading global public relations firms.</p>'
