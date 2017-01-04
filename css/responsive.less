@@ -239,45 +239,33 @@
 			padding: 40px 0 20px;
 		}
 
-		.men {
-			float: none;
-			width: auto; height: 70px;
-			text-align: left;
-			position: relative;
-			margin: 0 0 22px;
-			padding: 0 0 0 90px;
+		.team-box {
+			margin: 0;
+		}
 
-			img {
-				position: absolute;
-				top: 0; left: 0;
+		.men {
+			width: auto;
+			display: block;
+			position: relative;
+			text-align: left;
+			padding: 20px 30px 20px 100px;
+			margin: 0 -15px;
+			border-radius: 0;
+
+			.photo {
 				width: 70px; height: 70px;
-				border-radius: 70px;
+				position: absolute;
+				top: 10px; left: 15px;
 				margin: 0;
 			}
 
-			.name {
-				line-height: 20px;
-				color: #2D3E50;
-				padding: 11px 0 6px;
-				position: relative;
-
-				a {
-					display: block;
-					position: absolute;
-					top: 10px; right: 0;
-				}
+			.social {
+				right: 0; bottom: 0;
 			}
-
-			.post {
-				line-height: 17px;
-				color: #353535;
-			}
-		}
-
-		.team-box { padding: 15px 0;
-			&__slider, &__line { display: none; }
 		}
 	}
+
+	.tpopup { display: none!important; }
 
 	section.lead {
 		.section-title { line-height: 30px; }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+        <link rel="icon" href="img/favicon.ico">
+
+        <meta property="og:title" content="Entangled Solutions — About Us"/>
+        <meta property="og:url" content="http://entangled.solutions/" />
+        <meta property="og:description" content="Entangled Solutions is an innovation agency for Higher Education. Our services include strategy consulting, program design, marketing strategy, business model development and implementation planning."/>
+		<meta property="og:image" content="http://entangled.solutions/img/og-img.jpg" />
+
+		<title>Entangled Solutions — About Us</title>
+
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/fonts.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<link href="css/responsive.css" rel="stylesheet" />
+
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/team.js"></script>
+
+		<script>
+			var params = {};
+
+			location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (s, k, v) { params[k] = v; });
+
+			$(document).ready(function () {
+
+				var _id = params.id - 1;
+				_id = (teamMembers[_id]) ? _id : 0;
+
+				var _nextMenID = (teamMembers[_id + 1]) ? (_id + 1) : 0,
+					_nextMen = teamMembers[_nextMenID];
+
+				$('.men img').attr('src', teamMembers[_id].photo);
+				$('.name').html(teamMembers[_id].name);
+				$('.post').html(teamMembers[_id].post);
+				$('.bio').html(teamMembers[_id].bio);
+
+				if (_nextMenID == 0) {
+					$('.notable-example__header.alt2').remove();
+				} else {
+					$('.notable-example__header.alt2').attr('href', 'xs-tm?id=' + (_nextMenID + 1));
+
+					$('.notable-example__header.alt2').html('<i class="icon-01"></i>' + _nextMen.name);
+				}
+
+			});
+		</script>
+	</head>
+	<body>
+
+		<section class="notable-example">
+			<a href="about" class="notable-example__header alt"><i class="icon-01"></i>Team</a>
+
+			<div class="guide-b3__box">
+				<div class="container">
+					<div class="men">
+						<img src="#" alt="" />
+						<div class="name"></div>
+						<div class="post"></div>
+					</div>
+
+					<div class="bio"></div>
+				</div>
+			</div>
+
+			<a href="xs-tm?id=" class="notable-example__header alt2"><i class="icon-01"></i></a>
+		</section>
+
+	</body>
+</html>

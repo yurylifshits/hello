@@ -14,8 +14,6 @@ $(document).ready(function () {
 	});
 
 	$(window).on('load resize', function () {
-		updateLine ($('.team-box__line'), $('.team-box .men.active'));
-
 		var _w = $('section.intro .wrapper'),
 			_c = $('section.intro .container');
 
@@ -270,38 +268,95 @@ $(document).ready(function () {
 		$(this).toggleClass('active');
 	});
 
-	function updateLine (_line, _men) {
-		if (_line.length > 0) {
-			_line.css({
-				'width': _men.outerWidth() - 40,
-				'left': _men.offset().left - _men.parent().offset().left + 20
-			});
+	/// new team grid
+
+	if (teamMembers.length > 0) {
+
+		function lockScroll () {
+			var _scrollTop = $('body').scrollTop();
+
+			$('body').addClass('modal-open');
+			$('body').css('top', -1 * _scrollTop);
 		}
-	}
 
-	if ($('.team-box__slider').length > 0) {
-		$('.team-box__slider').slick({
-			adaptiveHeight: true,
-			infinite: false
-		});
+		function unlockScroll () {
+			var _scrollTop = parseInt($('body').css('top'));
 
-		$('.team-box__slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-			var _id = nextSlide + 1,
-				_men = $('.team-box .men:nth-child(' + _id + ')'),
-				_line = $('.team-box__line');
+			$('body').removeClass('modal-open');
+			$('body').css('top', 'auto');
+			$('body').scrollTop(-1 * _scrollTop);
+		}
 
-			_men.parent().find('.active').removeClass('active');
-			_men.addClass('active');
+		function getFirstWord (str) {
+			return (str.indexOf(' ') === -1) ? str : str.substr(0, str.indexOf(' '));
+		}
 
-			updateLine (_line, _men);
+		function loadMenBio (id) {
+			id = parseInt(id);
+
+			var _p = $('.tpopup'),
+				_pPhoto = _p.find('.tpopup--photo img'),
+				_pBio = _p.find('.tpopup--bio'),
+				_pPrev = _p.find('.tpopup--prev span'),
+				_pNext = _p.find('.tpopup--next span'),
+				_men = teamMembers[id],
+				_prevMenID = (teamMembers[id - 1]) ? (id - 1) : (teamMembers.length - 1),
+				_nextMenID = (teamMembers[id + 1]) ? (id + 1) : 0,
+				_prevMen = teamMembers[_prevMenID],
+				_nextMen = teamMembers[_nextMenID];
+
+			_p.attr('data-id', id);
+			_p.attr('data-prev-id', _prevMenID);
+			_p.attr('data-next-id', _nextMenID);
+			_pPhoto.attr('src', _men.photo);
+			_pBio.html(_men.bio);
+			_pPrev.html(getFirstWord(_prevMen.name));
+			_pNext.html(getFirstWord(_nextMen.name));
+		}
+
+		$('.team-box').html('');
+
+		$.each(teamMembers, function (key, value) {
+			var _men = $('<div class="men"></div>').appendTo($('.team-box'));
+
+			_men.attr('data-id', key);
+			_men.attr('data-href', 'xs-tm?id=' + (key + 1));
+
+			_men.append('<div class="photo"><img src="' + value.photo + '" alt="" /><a href="' + value.linkedin + '" class="social" target="_blank"><i></i></a></div>');
+			_men.append('<div class="name">' + value.name + '</div>');
+			_men.append('<div class="post">' + value.post + '</div>');
 		});
 
 		$('.team-box .men').on('click', function () {
 			if ($(window).width() > 560) {
-				$('.team-box__slider').slick('slickGoTo', $(this).index());
+				lockScroll ();
+
+				loadMenBio ($(this).data('id'));
+
+				$('.tpopup').fadeIn(300);
 			} else {
 				window.location.href = $(this).data('href');
 			}
+		});
+
+		$('.tpopup--overlay, .tpopup--close').on('click', function (e) {
+			e.preventDefault();
+
+			unlockScroll ();
+
+			$('.tpopup').fadeOut(300);
+		});
+
+		$('.tpopup--prev').on('click', function (e) {
+			e.preventDefault();
+
+			loadMenBio ($(this).closest('.tpopup').attr('data-prev-id'));
+		});
+
+		$('.tpopup--next').on('click', function (e) {
+			e.preventDefault();
+
+			loadMenBio ($(this).closest('.tpopup').attr('data-next-id'));
 		});
 	}
 
