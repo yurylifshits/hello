@@ -35,6 +35,13 @@ var teamMembers = [
 		bio: '<p><strong>Deborah Seymour</strong> is a Principal Consultant at Entangled Solutions. Previously, she served as chief academic innovation officer at the American Council on Education, a role in which she oversaw the Council’s agenda to support the return of the United States to global recognition in post-secondary attainment.</p><p>Deborah taught in the City University of New York system for 15 years. She also served as associate director of the Center for Adult Life & Learning at the 92nd Street Y in New York City, with responsibility for adult education programs and strategic partnerships with multiple external organizations. Deborah taught as well at the University of California-Irvine (UCI) and at Orange Coast College. She subsequently became a development officer for the School of Humanities at UCI, before transitioning to Laureate Education. At Laureate, she worked in all facets of product development and product management, both domestically and internationally. Her Laureate career also included research in the area of competency-based education. Deborah holds a BA from Hunter College in business and communications and an MPhil and PhD in theoretical linguistics from the City University of New York Graduate School and University Center.</p>'
 	},
 	{
+		name: 'Seth Andrew',
+		photo: 'img/team/seth.jpg',
+		post: 'Principal Consultant',
+		linkedin: 'https://www.linkedin.com/in/deborahmseymour',
+		bio: '<p><strong>Seth Andrew</strong>  is a Principal Consultant at Entangled Solutions. Most recently he served in the White House as Senior Advisor for Education and Civic Technology in the Executive Office of the President.  He led the Obama Administration’s efforts including Virtual reality for good, Future Ready Schools, Computer Science For All, Next Generation High Schools, and Vote.gov among others. Prior to the White House Seth served as Superintendent in Residence and Senior Advisor for US Education Secretary Arne Duncan.</p><p>Seth is a serial social entrepreneur. He founded and grew Democracy Prep Public Schools into a national network with more than 1,000 staff and a $120m annual budget and some of the strongest academic impact of any school organization. He also founded Washington Leadership Academy, which recently won the $10m XQ SuperSchool prize from Laurene Powell Jobs, Democracy Builders, Alumni Revolution, Citizenship First, Polaris Project, and Revolutionary Education Ventures (REV).  He holds an Ed.M from Harvard University and an A.B from Brown University.</p>'
+	},
+	{
 		name: 'Mike Berlin',
 		photo: 'img/team/mike.png',
 		post: 'Principal Consultant',
