@@ -88,13 +88,13 @@ var teamMembers = [
 		photo: 'img/team/casey.png',
 		post: 'Partnerships Manager',
 		linkedin: 'https://www.linkedin.com/in/caseythomasboyles',
-		bio: '<p><strong>Casey</strong> is the Partnerships Manager at Entangled Solutions. Prior to joining the team she spent the last 4 years working with Bay Area startups, helping to build sales, customer success and customer support teams. She has experience building summer school programs and has a passion for continuing education.</p><p>Casey earned a degree in Physics at King’s College London, a masters degree in Nanotechnology from the University of Pennsylvania and spent a year doing research on Electrical & Computer Engineering at the National University of Singapore.</p>'
+		bio: '<p><strong>Casey Boyles</strong> is the Partnerships Manager at Entangled Solutions. Prior to joining the team she spent the last 4 years working with Bay Area startups, helping to build sales, customer success and customer support teams. She has experience building summer school programs and has a passion for continuing education.</p><p>Casey earned a degree in Physics at King’s College London, a masters degree in Nanotechnology from the University of Pennsylvania and spent a year doing research on Electrical & Computer Engineering at the National University of Singapore.</p>'
 	},
 	{
 		name: 'Faz Nassiri',
 		photo: 'img/team/faz.png',
 		post: 'Operations Manager',
 		linkedin: 'https://www.linkedin.com/in/fazilatnassiri',
-		bio: 'Faz Nassiri is the Operations Manager at Entangled Solutions. She ensures that internal processes and workflows run smoothly and helps coordinate with external contractors and subject matter experts. Before joining Entangled she handled operations for two tech startups at SkyDeck, UC Berkeley’s startup incubator. Prior to coming to the Bay Area, she worked as an an assistant producer in television in London. Faz holds a BA in engineering and a master’s degree in International Business Management.'
+		bio: '<p><strong>Faz Nassiri</strong> is the Operations Manager at Entangled Solutions. She ensures that internal processes and workflows run smoothly and helps coordinate with external contractors and subject matter experts. Before joining Entangled she handled operations for two tech startups at SkyDeck, UC Berkeley’s startup incubator. Prior to coming to the Bay Area, she worked as an an assistant producer in television in London. Faz holds a BA in engineering and a master’s degree in International Business Management.</p>'
 	}
 ];
